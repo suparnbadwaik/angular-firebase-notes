@@ -1,0 +1,33 @@
+## Firebase
+Goto http://console.firebase.google.com
+Register a user with gmail account
+
+Create a new project and click on the project name.
+
+In the left navigation bar, open the Database section and select "Realtime Database" to add the Nodes.
+
+Now add the Nodes as in the google account.
+
+courses
+	- course1
+	- course2
+	- course3
+		- id
+		- email
+		- hasMoneyBackGuarentee
+
+
+## Using Firebase with Angular (2+)
+To use firebase in an angular app, you need to install the below packages first of all.
+
+`npm install firebase angularfire2 --save`
+firebase - provides the Database
+angularfire2 - provides the firebase class needed by angular to interact with it
+
+You can then import the AngularFireModule and AngularFireDatabaseModule in the App module file.
+
+To use, inject AngularFireDatabase in the class you wanna use it and then use the commands to list or save the data.
+
+
+## Issues
+You might face some issue of angular not having read/write access to the firebase Database.
